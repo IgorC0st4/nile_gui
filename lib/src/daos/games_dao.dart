@@ -26,7 +26,7 @@ class GamesDao {
     return games;
   }
 
-  Future<List<GameModel>> getOnlyInstalledGames() async {
+  /* Future<List<GameModel>> getOnlyInstalledGames() async {
     List<GameModel> allGames = await getLibrary();
     GameConfigController gameConfigController =
         await GameConfigController.create();
@@ -35,5 +35,5 @@ class GamesDao {
 
     List<GameModel> installedGames = [];
     installedGames = allGames.where((game) => allConfigs.firstWhere((config) => false))
-  }
+  } */
 }
